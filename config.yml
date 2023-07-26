@@ -1,0 +1,29 @@
+models:
+  - name: WizardCoder-15b-1.0.ggmlv3.q5_1
+    location: wizardCoder/WizardCoder-15B-1.0.ggmlv3.q5_1.bin
+    hf_link: https://huggingface.co/TheBloke/WizardCoder-15B-1.0-GGML
+    max_new_tokens: 2048
+    model_type: starcoder
+    license: cc-by-nc-4.0
+    gpu_layers: 30
+    prompts:
+      - | 
+        Below is an instruction that describes a task. Write a response that appropriately completes the request
+
+        ### Instruction: {query}
+
+        ### Response:
+  - name: falcon-40b-instruct.ggccv1.q3_k
+    location: falcon/falcon-40b-instruct.ggccv1.q3_k.bin
+    hf_link: https://huggingface.co/TheBloke/falcon-40b-instruct-GGML
+    max_new_tokens: 2048
+    model_type: falcon
+    license: apache 2.0
+    gpu_layers: 30
+    prompts:
+      - | 
+        Below is an instruction that describes a task. Write a response that appropriately completes the request
+
+        ### Instruction: {query}
+
+        ### Response:
